@@ -1,0 +1,65 @@
+*{
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h2{
+    margin-top: 1px;
+}
+
+h1, h3 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: #333;
+    
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px;
+}
+
+.book {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.book .info {
+    padding: 10px;
+}
+
+.book h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.book p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #666;
+}
